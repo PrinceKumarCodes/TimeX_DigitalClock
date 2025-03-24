@@ -1,16 +1,22 @@
-# ⏳ TimeX Digital Clock
-TimeX Digital Clock is a modern, stylish, and interactive digital clock built using HTML, CSS, and JavaScript. Designed with smooth animations, a dynamic user interface, and real-time updates,
-# 🔥 Features
-- Real-time digital clock with live updates
-- AM/PM & 24-hour format support
-- Customizable themes for a personalized look
-- Smooth animations for a sleek UI experience
-- Responsive design for all screen sizes
-- Lightweight & efficient with minimal resource usage
+# ⏳ TimeX Digital Clock  
 
-# 🛠️ Technologies Used
-- HTML5 – Structure of the clock
+**TimeX Digital Clock** is a modern, stylish, and interactive digital clock built using **HTML, CSS, and JavaScript**. It features smooth animations, a dynamic user interface, and real-time updates to enhance your experience.  
 
-- CSS3 – Styling & animations
+---
 
-- JavaScript – Real-time functionality
+## 🔥 Features  
+
+✅ **Real-time Clock** – Updates live every second  
+✅ **AM/PM & 24-Hour Format** – Choose your preferred time format  
+✅ **Customizable Themes** – Personalize the look with different themes  
+✅ **Smooth Animations** – Sleek transitions for a better UI experience  
+✅ **Responsive Design** – Works perfectly on all devices  
+✅ **Lightweight & Efficient** – Minimal resource usage for better performance  
+
+---
+
+## 🛠️ Technologies Used  
+
+- **HTML5** – Structure of the clock  
+- **CSS3** – Styling & animations  
+- **JavaScript** – Real-time functionality  
