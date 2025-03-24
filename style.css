@@ -77,6 +77,11 @@ body {
   overflow: hidden;
   transform: scale(1.01);
 }
+.container .left-part .profile-text h1 {
+  background: linear-gradient(to right, #0344da, #bd0013);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .left-part .social-media {
   padding-top: 20px;
