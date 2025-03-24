@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analog App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="left-part">
+        <div class="profile-logo">
+          <img src="/Image/profile_image.jpg" alt="" />
+        </div>
+        <div class="profile-text">
+          <br />
+          <h5>Hi I'm</h5>
+          <h1>Prince Kumar</h1>
+          <br />
+          <p>
+            Welcome to my Digital clock website! As a dedicated and aspiring
+            web developer, I am driven by a passion for creating innovative
+            solutions and advancing technology. I love coding and
+            problem-solving, and I continuously seek opportunities to learn
+            and grow in this dynamic field.
+          </p>
+        </div>
+        <div class="social-media">
+          <a href="mailto:prince.kumar@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+          <a href="https://github.com/PrinceKumar" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/prince" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="right-part">
+        <div class="clock">
+          <div class="num" style="--v: 1"><b>1</b></div>
+          <!-- style = --v:1 is a variable and value -->
+          <div class="num" style="--v: 2"><b>2</b></div>
+          <div class="num" style="--v: 3"><b>3</b></div>
+          <div class="num" style="--v: 4"><b>4</b></div>
+          <div class="num" style="--v: 5"><b>5</b></div>
+          <div class="num" style="--v: 6"><b>6</b></div>
+          <div class="num" style="--v: 7"><b>7</b></div>
+          <div class="num" style="--v: 8"><b>8</b></div>
+          <div class="num" style="--v: 9"><b>9</b></div>
+          <div class="num" style="--v: 10"><b>10</b></div>
+          <div class="num" style="--v: 11"><b>11</b></div>
+          <div class="num" style="--v: 12"><b>12</b></div>
+          <div class="dot">
+            <div class="outer-dot">
+              <div class="inner-dot"></div>
+            </div>
+          </div>
+          <div class="digi-clock">
+            <!--digital clock -->
+            <div class="day">00</div>
+            -
+            <!--this will update digital day -->
+            <div class="wday">00</div>
+            -
+            <!--this will update digital weekday -->
+            <div class="month">00</div>
+            -
+            <!--this will update digital month -->
+            <div class="year">00</div>
+            <!--this will update digital year -->
+          </div>
+          <div class="time-hand">
+            <div class="hours-hand"></div>
+            <div class="minutes-hand"></div>
+            <div class="seconds-hand"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <audio controls autoplay muted>
+      <source src="/Image/sound.mp3" />
+    </audio> -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

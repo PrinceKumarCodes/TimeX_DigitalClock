@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "poppins", sans-serif;
+  background-color: black;
+  display: flex;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  object-fit: cover;
+  padding: 30px;
+}
+.container .main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  object-fit: cover;
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)),
+    url("/Image/image.png"); /* opacity top , down  per set hoga first top and second bottom*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+/* --------------------Left part-------------------- */
+
+.container .left-part {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-basis: 50%;
+  /* background-color: gray; */
+  color: white;
+  display: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+.container .left-part .profile-logo img {
+  width: 252px;
+  height: 245px;
+  border-radius: 50%;
+  border: 8px solid green;
+  overflow: hidden;
+  transition: 0.3s;
+  transition: all 0.3s ease-in 0s;
+}
+.container .left-part .profile-logo img:hover {
+  width: 253px;
+  height: 246px;
+  border-radius: 50%;
+  border: 8px solid blue;
+  overflow: hidden;
+  transform: scale(1.01);
+}
+
+.left-part .social-media {
+  padding-top: 20px;
+  font-size: 30px;
+}
+.left-part .social-media i {
+  padding-top: 10px;
+  color: white;
+  transition: 0.5s;
+}
+.left-part .social-media i:hover {
+  transform: rotate(360deg);
+  color: blue;
+}
+
+/* --------------------Right part-------------------- */
+
+.container .right-part {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-basis: 50%;
+  /* background-color: green; */
+  color: white;
+  display: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+.clock {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 90px;
+  width: 30vw;
+  height: 30vw;
+  background-color: rgb(239, 243, 246);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: inset 1px 2px 10px rgba(31, 236, 4, 0.7),
+    -1px -2px 10px rgba(199, 87, 21, 0.7); */
+  background-color: rgb(141, 141, 141);
+}
+
+.num {
+  font-size: 25px;
+  position: absolute;
+  color: black;
+  inset: 20px;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--v)));
+  /* The calc() function allows for mathematical expressions in CSS. Here,
+     it multiplies 30deg (30 degrees) by the value of the custom property --v.
+     This is a CSS custom property (also known as a CSS variable).
+     */
+  padding: 10px;
+  box-shadow: inset 5px 5px 3px grey, -5px -5px 3px white;
+  border-radius: 50%;
+  /* background-color:rgb(138, 183, 50); */
+}
+.num b {
+  transform: rotate(calc(-30deg * var(--v)));
+  display: inline-block;
+}
+.dot {
+  position: absolute;
+  width: 8%;
+  height: 8%;
+  background: linear-gradient(yellow, red, white, green);
+  border-radius: 50%;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.8), -1px -2px 10px rgba(0, 0, 0, 0.8);
+  /* box-shadow: offset-x offset-y blur-radius spread-radius color;
+    */
+  z-index: 2;
+  /* z-index :2 karne per dot forground and clock sui background me chala jayega */
+}
+.dot .outer-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(yellow, red, white, green);
+  border-radius: 50%;
+  z-index: 2;
+  top: 6px;
+  left: 6px;
+}
+.dot .inner-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 2;
+  top: 6px;
+  left: 5px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.8), -1px -2px 10px rgba(0, 0, 0, 0.8);
+}
+.digi-clock {
+  position: absolute;
+  width: 43%;
+  height: 10%;
+  background-color: rgb(60, 60, 60);
+  bottom: 30%;
+  gap: 0.5px;
+  /* background: transparent; */
+  box-shadow: inset 5px 5px 3px rgb(31, 31, 31), inset -3px -3px 0px white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 10px;
+  animation-name: digi-clock-animation;
+  animation-duration: 0.1ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  padding: 0px 15px;
+}
+
+@keyframes digi-clock-animation {
+  from {
+    background-color: rgb(60, 60, 60);
+  }
+  to {
+    background-color: rgb(50, 48, 55);
+  }
+}
+
+.clock .time-hand {
+  background-color: rgb(138, 183, 50);
+  padding: 10px;
+  box-shadow: inset 5px 5px 3px grey, -5px -5px 3px white;
+  border-radius: 50%;
+}
+
+.hours-hand,
+.minutes-hand,
+.seconds-hand {
+  position: absolute;
+  background: black;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  transform-origin: bottom;
+  /* This will rotate from bottom , by default rotation from center */
+}
+.hours-hand {
+  width: 2%;
+  height: 30%;
+  top: 20.5%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+}
+.minutes-hand {
+  width: 1.2%;
+  height: 35%;
+  top: 15.5%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+}
+.seconds-hand {
+  width: 0.6%;
+  height: 38%;
+  top: 12.5%;
+  background-color: rgb(0, 0, 0);
+}
+/* audio {
+  display: none;
+} */
+
+/* ---------------Responsive ---------------------- */
+
+@media (max-width: 760px) {
+  .clock {
+    position: relative;
+    margin-top: 20px;
+    width: 80vw;
+    height: 80vw;
+    margin-left: 8px;
+    background-color: rgb(239, 243, 246);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: inset 1px 2px 10px rgba(31, 236, 4, 0.7), -1px -2px 10px rgba(199, 87, 21, 0.7); */
+    background-color: rgb(141, 141, 141);
+  }
+  .digi-clock {
+    position: absolute;
+    width: 52%;
+    height: 10%;
+    background-color: rgb(60, 60, 60);
+    bottom: 30%;
+    gap: 1px;
+    color: black;
+  }
+  .container .main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: cover;
+    padding: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+      url(/Image/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
